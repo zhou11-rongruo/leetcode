@@ -52,8 +52,6 @@ class Solution {
             if (stones[i] - stones[i - 1] > i) {
                 return false;
             }
-        }
-        for (int i = 1; i < n; ++i) {
             for (int j = i - 1; j >= 0; --j) {
                 int k = stones[i] - stones[j];
                 if (k > j + 1) {
